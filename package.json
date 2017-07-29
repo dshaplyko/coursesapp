@@ -1,0 +1,16 @@
+{
+  "name": "demo-po-pattern",
+  "version": "1.0.0",
+  "description": "courses",
+  "devDependencies": {
+    "protractor": "^5.1.1",
+    "jasmine-spec-reporter": "2.5.0"
+  },
+  "scripts": {
+    "prestart-webdriver": "webdriver-manager update",
+    "start-webdriver": "webdriver-manager start",
+    "e2e": "protractor protractor.conf.js"
+  },
+  "author": "SM",
+  "license": "ISC"
+}

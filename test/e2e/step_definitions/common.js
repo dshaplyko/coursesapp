@@ -7,7 +7,7 @@ var CommonSteps = function () {
             .then(function () {
                 return require('../page_object/pages/loginPage');
             })
-    }
+    };
 };
 
 module.exports = new CommonSteps();

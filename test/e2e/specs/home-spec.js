@@ -1,9 +1,10 @@
 var homeSteps = require('../step_definitions/home');
 var steps = require('../step_definitions/common');
+var loginSteps = require('../step_definitions/login');
 
 describe('Accessing Home page', function() {
 
-    beforeAll(function () {
+    beforeEach(function () {
         homeSteps.navigateTo();
     });
 
@@ -13,10 +14,15 @@ describe('Accessing Home page', function() {
 
     it('Should navigate to login page', function ()  {
        steps.clickLogin();
-       browser.sleep(5000);
+       loginSteps.loginFormShouldBeDisplayed();
     });
 
-    afterAll(function (){
+    it('Should return empty search list', function ()  {
+       homeSteps.executeSearch('blablabla');
+       homeSteps.validateSearchMessage();
+    });
+
+    afterAll(function () {
        console.log('its done')
     });
 });

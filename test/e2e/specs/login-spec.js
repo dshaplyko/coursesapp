@@ -1,5 +1,5 @@
 var loginSteps = require('../step_definitions/login');
-var steps = require('../step_definitions/common');
+var homeSteps = require('../step_definitions/home');
 
 describe('Accessing Login page', function() {
 
@@ -9,7 +9,15 @@ describe('Accessing Login page', function() {
 
     it('Should contain all necessary items', function ()  {
         loginSteps.checkWelcomeText();
+        loginSteps.loginFieldShouldBeDisplayed();
+        loginSteps.passwordFieldShouldBeDisplayed();
     });
+
+    it('Should login using valid credentials', function ()  {
+        loginSteps.loginWithValidCredentials();
+        homeSteps.homePageShouldBeDisplayed();
+    });
+
 
     afterEach(function (){
         console.log('its done')

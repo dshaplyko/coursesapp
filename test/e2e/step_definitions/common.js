@@ -1,11 +1,12 @@
 var header = require('../page_object/common/header');
+var loginPage = require('../page_object/pages/loginPage');
 
 var CommonSteps = function () {
 
-    this.clickLogin = function () {
+    this.clickLogin = () => {
         return header.loginButton.click()
-            .then(function () {
-                return require('../page_object/pages/loginPage');
+            .then(() => {
+                return loginPage;
             })
     };
 };

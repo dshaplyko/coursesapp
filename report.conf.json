@@ -1,0 +1,6 @@
+{
+  "junitReportPath": "reports/junitresults.xml",
+  "reportName": "protractorresults",
+  "formats": ["xlsx", "html"],
+  "publish": {}
+}

@@ -5,12 +5,16 @@
   "devDependencies": {
     "protractor": "^5.1.1",
     "jasmine-spec-reporter": "2.5.0",
-    "jasmine-core": "2.5.2"
+    "jasmine-core": "2.5.2",
+    "gulp": "^3.9.1",
+    "jasmine-reporters": "^2.2.1",
+    "wk-ots-report-converter": "^1.2.2"
   },
   "scripts": {
     "prestart-webdriver": "webdriver-manager update",
     "start-webdriver": "webdriver-manager start",
-    "e2e": "protractor protractor.conf.js"
+    "e2e": "protractor protractor.conf.js",
+    "poste2e": "gulp convertReport --report ./report.conf.json"
   },
   "author": "SM",
   "license": "ISC"

@@ -1,6 +1,6 @@
-var homeSteps = require('../step_definitions/home');
-var steps = require('../step_definitions/common');
-var loginSteps = require('../step_definitions/login');
+const homeSteps = require('../step_definitions/home');
+const steps = require('../step_definitions/common');
+const loginSteps = require('../step_definitions/login');
 
 describe('Accessing Home page', function() {
 

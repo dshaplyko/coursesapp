@@ -18,7 +18,7 @@ var HomeSteps = function () {
         });
     }
 
-    this.validateSearchMessage = function() {
+    this.validateSearchMessage = () => {
         return homePage.searchMessage.getText().then((text) => {
             return expect(text).toEqual('No data. Feel free to add new one.');
         });

@@ -2,23 +2,26 @@ const loginSteps = require('../step_definitions/login');
 const homeSteps = require('../step_definitions/home');
 const steps = require('../step_definitions/common');
 
+describe('Accessing Login page', () => {
 
-
-describe('Accessing Login page', function() {
-
-    beforeEach(function () {
+    beforeEach(() => {
         loginSteps.navigateTo()
     });
 
-    it('Should contain all necessary items', function ()  {
+    it('Should contain all necessary items', () => {
         loginSteps.checkWelcomeText();
-        steps.highlightLoginButton();
         loginSteps.loginFieldShouldBeDisplayed();
         loginSteps.passwordFieldShouldBeDisplayed();
     });
 
-    it('Should login using valid credentials', function ()  {
+    it('Should login using valid credentials', () => {
         loginSteps.loginWithValidCredentials();
         homeSteps.homePageShouldBeDisplayed();
     });
+
+    // it('Should error on a missing username' () => {
+    //     loginSteps.enterPassword();
+    //     loginSteps.clickSubmitButton();
+    //     loginSteps.errorMessageIsDisplayed();
+    // })
 });

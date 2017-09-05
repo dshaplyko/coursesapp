@@ -1,6 +1,7 @@
 var SpecReporter = require('jasmine-spec-reporter');
 var Reporters = require('jasmine-reporters');
 var HtmlScreenshotReporter = require('protractor-jasmine2-screenshot-reporter');
+var log4reporter = require('./reporter.js');
 
 var reporter = new HtmlScreenshotReporter({
   dest: './screenshots',
@@ -24,7 +25,6 @@ exports.config = {
   },
 
   onPrepare: function () {
-        var log4reporter = require('./reporter.js');
         jasmine.getEnv().addReporter(new log4reporter());
         jasmine.getEnv().addReporter(new SpecReporter());
         jasmine.getEnv().addReporter(reporter);

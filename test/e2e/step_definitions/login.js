@@ -31,15 +31,33 @@ var LoginSteps = function () {
         })
     };
 
+    this.enterUsername = () => {
+        return loginPage.loginField.sendKeys('Warner');
+    };
+
+    this.enterPassword = () => {
+        return loginPage.passwordField.sendKeys('ea');
+    };
+
+    this.clickSubmitButton = () => {
+        return loginPage.loginButton.click();
+    };
+
+    this.errorMessageIsDisplayed = () => {
+        return loginPage.loginForm.isDisplayed().then((isDisplayed) => {
+            return expect(isDisplayed).toBe(true);
+        })
+    }
+
     this.loginWithValidCredentials = () => {
-        return loginPage.loginField.sendKeys('Warner')
+        return this.enterUsername()
             .then(() => {
-                return loginPage.passwordField.sendKeys('ea');
+                return this.enterPassword();
             }).then(() => {
-                return loginPage.loginButton.click();
+                return this.clickSubmitButton();
             }).then(() => {
                 return homePage;
-            });
+        });
     }
 };
 

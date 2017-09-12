@@ -24,4 +24,11 @@ describe('Accessing Login page', () => {
     //     loginSteps.clickSubmitButton();
     //     loginSteps.errorMessageIsDisplayed();
     // })
+
+    // it('Should error on a missing password' () => {
+    //     loginSteps.enterUsername();
+    //     loginSteps.clickSubmitButton();
+    //     loginSteps.errorMessageIsDisplayed();
+    // })
+
 });

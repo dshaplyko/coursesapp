@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
- <testsuite name="Accessing Home page" timestamp="2017-09-03T17:25:41" hostname="localhost" time="15.09" errors="0" tests="3" skipped="0" disabled="0" failures="0">
-  <testcase classname="Accessing Home page" name="Should contain body" time="11.426" />
-  <testcase classname="Accessing Home page" name="Should navigate to login page" time="2.053" />
-  <testcase classname="Accessing Home page" name="Should return empty search list" time="1.606" />
+ <testsuite name="Accessing Home page" timestamp="2017-09-12T15:00:18" hostname="localhost" time="17.556" errors="0" tests="3" skipped="0" disabled="0" failures="0">
+  <testcase classname="Accessing Home page" name="Should contain body" time="13.475" />
+  <testcase classname="Accessing Home page" name="Should navigate to login page" time="2.078" />
+  <testcase classname="Accessing Home page" name="Should return empty search list" time="1.999" />
  </testsuite>
- <testsuite name="Accessing Login page" timestamp="2017-09-03T17:25:56" hostname="localhost" time="6.295" errors="0" tests="2" skipped="0" disabled="0" failures="0">
-  <testcase classname="Accessing Login page" name="Should contain all necessary items" time="1.32" />
-  <testcase classname="Accessing Login page" name="Should login using valid credentials" time="4.975" />
+ <testsuite name="Accessing Login page" timestamp="2017-09-12T15:00:36" hostname="localhost" time="5.899" errors="0" tests="2" skipped="0" disabled="0" failures="0">
+  <testcase classname="Accessing Login page" name="Should contain all necessary items" time="1.124" />
+  <testcase classname="Accessing Login page" name="Should login using valid credentials" time="4.774" />
  </testsuite>
 </testsuites>

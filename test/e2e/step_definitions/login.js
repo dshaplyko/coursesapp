@@ -10,6 +10,8 @@ var LoginSteps = function () {
     this.checkWelcomeText = () => {
         return loginPage.loginTitle.getText().then((text) => {
             return expect(text).toEqual('Sign in to Courses');  
+        }, (error) => {
+            console.error(error);
         });
     };
 

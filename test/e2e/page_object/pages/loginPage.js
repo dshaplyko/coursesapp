@@ -12,4 +12,3 @@ function LoginPage() {
 
 LoginPage.prototype = BasePage;
 module.exports = new LoginPage();
-
